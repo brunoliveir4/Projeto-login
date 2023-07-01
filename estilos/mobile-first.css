@@ -89,8 +89,8 @@ div.campo > input {
     border-radius: 8px;
     outline: none;
     padding-left: 3px;
-    
-    transform: translateY(-9px); 
+
+    transform: translateY(-10px); 
 }
 
 ::placeholder {
