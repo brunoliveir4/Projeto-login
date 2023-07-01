@@ -1,3 +1,4 @@
+/* Configurações Tablet */
 @media screen and (orientation: landscape) and (min-width: 786px) and (max-width: 992px) {
 
     body {
@@ -25,6 +26,7 @@
     }
 }
 
+/* Configurações PC */
 @media screen and (min-width: 992px) {
 
     body {
@@ -48,5 +50,13 @@
     section#login > div#informacoes {
         float: left;
         width: 55%;
+    }
+
+    div#informacoes > h1 {
+        font-size: 2em;
+    }
+
+    div#informacoes > p {
+        font-size: 1.1em;
     }
 }

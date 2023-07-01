@@ -22,12 +22,13 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 250px;
     height: 500px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.486);
+
+    transform: translate(-50%, -50%); 
     transition: width 0.2s, height 0.2s;
     transition-timing-function: ease;
 }
@@ -45,3 +46,98 @@ section#login > div#informacoes {
     display: block;
     padding: 10px;
 }
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    user-select: none;
+}
+
+div#informacoes > p {
+    font-size: 0.8em;
+    user-select: none;
+}
+
+form > div.campo {
+    background-color: #5f2c82;
+    /* border: 1px solid black; */
+    margin: 5px 0px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+div.campo > span {
+    color: white;
+    width: 40px;
+    font-size: 2em;
+    padding: 4px;
+    border-radius: 5px 0px 0px 5px;
+    user-select: none;
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > input {
+    background-color: #37aca8d2;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    width: calc(100% - 46px); 
+    height: 91%;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    padding-left: 3px;
+    
+    transform: translateY(-9px); 
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.712);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+form > input[type=submit] {
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+    background-color: #49a09d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+form > input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #255250;
+}
+
+form > a.botao {
+    display: block;
+    background-color: white;
+    height: 40px;
+    width: 100%;
+    color: #347270;
+    text-align: center;
+    border: 1px solid #49a09d;
+    border-radius: 5px;
+    margin-top: 3px;
+    text-decoration: none;
+    padding-top: 7px;
+}
+
+form > a.botao:hover {
+    background-color: #347270;
+    cursor: pointer;
+    color: white;
+}
+
+form > a.botao > span {
+    font-size: 0.5em;
+}
+
